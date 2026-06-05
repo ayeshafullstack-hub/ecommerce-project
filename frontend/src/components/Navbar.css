@@ -1,0 +1,187 @@
+/* Navbar */
+
+.navbar {
+    background: #2874f0;
+    height: 65px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 40px;
+
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Logo */
+
+.logo {
+    color: white;
+    text-decoration: none;
+
+    font-size: 30px;
+    font-weight: 700;
+
+    letter-spacing: 0.5px;
+}
+
+/* Center Search */
+
+.nav-center {
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+
+    margin: 0 40px;
+}
+
+.search-box {
+    width: 100%;
+    max-width: 550px;
+
+    padding: 12px 18px;
+
+    border: none;
+    outline: none;
+
+    border-radius: 3px;
+
+    font-size: 15px;
+
+    box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+}
+
+.search-box::placeholder {
+    color: #777;
+}
+
+/* Right Side */
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-link,
+.cart-link {
+    color: white;
+    text-decoration: none;
+
+    font-size: 18px;
+    font-weight: 600;
+
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    position: relative;
+}
+
+/* Cart Badge */
+
+.cart-badge {
+    position: absolute;
+
+    top: -10px;
+    right: -18px;
+
+    background: #ff6161;
+
+    color: white;
+
+    width: 22px;
+    height: 22px;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Hover */
+
+.nav-link:hover,
+.cart-link:hover,
+.logo:hover {
+    opacity: 0.9;
+}
+
+.auth-links {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Login & Signup Links */
+.auth-btn {
+  text-decoration: none;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.auth-btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* Logout Button */
+.logout-btn {
+  padding: 8px 16px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: #b02a37;
+  transform: translateY(-2px);
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 12px;
+        gap: 12px;
+    }
+
+    .nav-center {
+        width: 100%;
+        margin: 0;
+    }
+
+    .search-box {
+        max-width: 100%;
+    }
+
+    .nav-right {
+        gap: 20px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+}
+

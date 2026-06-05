@@ -1,0 +1,191 @@
+body {
+    background: #f1f3f6;
+}
+
+/* Container */
+
+.product-details-container {
+    max-width: 1300px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+/* Card */
+
+.product-details-card {
+    display: flex;
+    gap: 40px;
+
+    background: white;
+    padding: 30px;
+
+    border-radius: 4px;
+    border: 1px solid #e0e0e0;
+}
+
+/* LEFT */
+
+.image-section {
+    flex: 1;
+}
+
+.product-details-image {
+    width: 100%;
+    max-width: 450px;
+    height: 450px;
+    object-fit: contain;
+
+    display: block;
+    margin: auto;
+}
+
+.button-group {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+/* Buttons */
+
+.cart-btn {
+    flex: 1;
+
+    padding: 15px;
+    border: none;
+
+    background: #ff9f00;
+    color: white;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.cart-btn:hover {
+    background: #fb8c00;
+}
+
+.buy-btn {
+    flex: 1;
+
+    padding: 15px;
+    border: none;
+
+    background: #fb641b;
+    color: white;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.buy-btn:hover {
+    background: #f4511e;
+}
+
+/* RIGHT */
+
+.product-info {
+    flex: 1.5;
+}
+
+.product-title {
+    font-size: 28px;
+    color: #212121;
+    margin-bottom: 15px;
+}
+
+/* Rating */
+
+.rating {
+    display: inline-block;
+
+    background: #388e3c;
+    color: white;
+
+    padding: 4px 10px;
+    border-radius: 4px;
+
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* Price */
+
+.price-section {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    margin-bottom: 15px;
+}
+
+.current-price {
+    font-size: 32px;
+    font-weight: 700;
+    color: #212121;
+}
+
+.old-price {
+    color: #878787;
+    text-decoration: line-through;
+}
+
+.discount {
+    color: #388e3c;
+    font-weight: 600;
+}
+
+/* Delivery */
+
+.delivery {
+    color: #388e3c;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+/* Description */
+
+.product-description {
+    color: #555;
+    line-height: 1.8;
+    margin-top: 10px;
+}
+
+/* Back Button */
+
+.back-home-link {
+    display: inline-block;
+    margin-top: 25px;
+
+    text-decoration: none;
+    color: #2874f0;
+    font-weight: 600;
+}
+
+.back-home-link:hover {
+    text-decoration: underline;
+}
+
+/* Mobile */
+
+@media (max-width: 900px) {
+
+    .product-details-card {
+        flex-direction: column;
+    }
+
+    .product-details-image {
+        height: 300px;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+
+    .current-price {
+        font-size: 28px;
+    }
+}
