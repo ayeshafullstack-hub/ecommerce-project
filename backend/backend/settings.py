@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-$6371v#um=ru$2$sokyko5_=@-xk=n01(=#s557a^r-ift*9()
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'store',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
@@ -133,7 +134,7 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ALLOW_ALL_ORIGINS = [
-    "http://localhost:3000",
+    True
 ]
 
 MEDIA_URL = '/media/'
@@ -155,3 +156,6 @@ SIMPLE_JWT = {
     'BLAKLIST_AFTER_ROTATION': True,
     'AUTH_HEADER_TYPES': ('Bearer',),
 }
+
+STATIC_URL = '/static/'
+STATIC_ROOT = BASE_DIR / 'staticfiles'
